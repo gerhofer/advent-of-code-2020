@@ -1,7 +1,7 @@
 object Day4 {
 
     fun partOne(filePath: String): Int {
-        val passports = javaClass.getResource(filePath).readText()
+        val passports : List<Passport> = javaClass.getResource(filePath).readText()
             .split("\r\n\r\n")
             .map { Passport(it) }
 
@@ -58,7 +58,7 @@ data class Passport(
     }
 
     fun heightValid(): Boolean {
-        val height = properties["hgt"]!!
+        val height = properties["hgt"]!!// String? => String
         return when {
             height.endsWith("cm") -> height.substringBefore("cm").toInt() in 150..193
             height.endsWith("in") -> height.substringBefore("in").toInt() in 59..76
