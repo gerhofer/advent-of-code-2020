@@ -20,8 +20,12 @@ fun main(args: Array<String>) {
 //    println(Day5.partTwo("input5.txt"))
 
 
-    println("Day 6")
-    println(Day6.partOne("input6.txt"))
-    println(Day6.partTwo("input6.txt"))
+//    println("Day 6")
+//    println(Day6.partOne("input6.txt"))
+//    println(Day6.partTwo("input6.txt"))
+
+    println("Day 7")
+    println(Day7.partOne("input7.txt"))
+    println(Day7.partTwo("input7.txt"))
 }
 
