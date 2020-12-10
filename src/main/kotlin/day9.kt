@@ -4,11 +4,12 @@ object Day9 {
         val numbers = javaClass.getResource(filePath).readText()
             .split("\r\n")
             .map { it.toLong() }
-        val frameSize = 25
+        val frameSize = 5
         val preambleValues = numbers.take(frameSize)
-        val possibleSums = preambleValues.mapIndexed { index, element ->
-            (index + 1 until frameSize).map {
-                preambleValues[index] + preambleValues[it]
+        val possibleSums = preambleValues.mapIndexed { index, _ ->
+            // for (let secondIndex = index + 1; secondIndex < frameSize; secondIndex++)
+            (index + 1 until frameSize).map { secondIndex ->
+                preambleValues[index] + preambleValues[secondIndex]
             }.toMutableList()
         }.toMutableList()
 
