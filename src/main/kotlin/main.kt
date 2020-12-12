@@ -19,7 +19,6 @@ fun main(args: Array<String>) {
 //    println(Day5.partOne("input5.txt"))
 //    println(Day5.partTwo("input5.txt"))
 
-
 //    println("Day 6")
 //    println(Day6.partOne("input6.txt"))
 //    println(Day6.partTwo("input6.txt"))
@@ -36,8 +35,12 @@ fun main(args: Array<String>) {
 //    println(Day9.partOne("input9.txt"))
 //    println(Day9.partTwo("input9.txt"))
 
-    println("Day 10")
-    println(Day10.partOne("input10.txt"))
-    println(Day10.partTwo("input10.txt"))
+//    println("Day 10")
+//    println(Day10.partOne("input10.txt"))
+//    println(Day10.partTwo("input10.txt"))
+
+    println("Day 11")
+    println(Day11.partOne("input11.txt"))
+    println(Day11.partTwo("input11.txt"))
 }
 

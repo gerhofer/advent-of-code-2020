@@ -37,17 +37,18 @@ object Day10 {
                 1 -> groupSize++
                 3 -> {
                     mapOfCounts[groupSize] = mapOfCounts.getOrDefault(groupSize, 0) + 1
-                    groupSize = 0
+                    groupSize = 1
                 }
                 else -> println("hey this shouldn't happen")
             }
             b
         }
+        mapOfCounts[groupSize] = mapOfCounts.getOrDefault(groupSize, 0) + 1
 
         println(mapOfCounts)
 
-        return (((2.0).pow(mapOfCounts[3]!!)) *
-                (3.0.pow(mapOfCounts[4]!!)) *
-                (7.0.pow(mapOfCounts[5]!!))).toLong()
+        return (((2.0).pow(mapOfCounts[3]?:0)) *
+                (4.0.pow(mapOfCounts[4]?:0)) *
+                (7.0.pow(mapOfCounts[5]?:0))).toLong()
     }
 }
